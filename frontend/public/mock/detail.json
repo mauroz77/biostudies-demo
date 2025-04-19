@@ -1,0 +1,472 @@
+{
+    "accno": "S-EPMC11663195",
+    "attributes": [
+      {
+        "name": "DataSource",
+        "value": "Europe PMC"
+      },
+      {
+        "name": "Title",
+        "value": "Circulating extracellular vesicle-carried PTP1B and PP2A phosphatases as regulators of insulin resistance."
+      },
+      {
+        "name": "ReleaseDate",
+        "value": "2025-01-01"
+      },
+      {
+        "name": "AttachTo",
+        "value": "EuropePMC"
+      }
+    ],
+    "section": {
+      "type": "Study",
+      "attributes": [
+        {
+          "name": "Title",
+          "value": "Circulating extracellular vesicle-carried PTP1B and PP2A phosphatases as regulators of insulin resistance."
+        },
+        {
+          "name": "Abstract",
+          "value": "<h4>Aims/hypothesis</h4>Metabolic disorders associated with abdominal obesity, dyslipidaemia, arterial hypertension and hyperglycaemia are risk factors for the development of insulin resistance. Extracellular vesicles (EVs) may play an important role in the regulation of metabolic signalling pathways in insulin resistance and associated complications.<h4>Methods</h4>Circulating large EVs (lEVs) and small EVs (sEVs) from individuals with (IR group) and without insulin resistance (n-IR group) were isolated and characterised. lEVs and sEVs were administered by i.v. injection to mice and systemic, adipose tissue and liver insulin signalling were analysed. The role of phosphatases was analysed in target tissues and cells.<h4>Results</h4>Injection of lEVs and sEVs from IR participants impaired systemic, adipose tissue and liver insulin signalling in mice, while EVs from n-IR participants had no effect. Moreover, lEVs and sEVs from IR participants brought about a twofold increase in adipocyte size and adipogenic gene expression. EVs from IR participants expressed two types of phosphatases, phosphotyrosine 1 phosphatase (PTP1B) and protein phosphatase 2 (PP2A), IR lEVs being enriched with the active form of PTP1B while IR sEVs mainly carried active PP2A. Blockade of PTP1B activity in IR lEVs fully restored IRS1 and Akt phosphorylation in adipocytes and blunted insulin-induced Akt phosphorylation by inhibition of the macrophage secretome in hepatocytes. Conversely, blockade of PP2A activity in IR sEVs completely prevented insulin resistance in adipocytes and hepatocytes.<h4>Conclusions/interpretation</h4>These data demonstrate that inhibition of phosphatases carried by EVs from IR participants rescues insulin signalling in adipocytes and hepatocytes and point towards PTP1B and PP2A carried by IR EVs as being novel potential therapeutic targets against insulin resistance in adipose tissue and liver and the development of obesity."
+        }
+      ],
+      "files": [
+        {
+          "path": "125_2024_6288_MOESM1_ESM.pdf",
+          "size": 1075321,
+          "type": "file"
+        }
+      ],
+      "links": [
+        [
+          {
+            "url": "NCT00997165",
+            "attributes": [
+              {
+                "name": "Type",
+                "value": "nct"
+              }
+            ]
+          }
+        ]
+      ],
+      "subsections": [
+        {
+          "type": "Funding",
+          "attributes": [
+            {
+              "name": "Agency",
+              "value": "Fondation de France"
+            },
+            {
+              "name": "grant_id",
+              "value": "00096290"
+            }
+          ]
+        },
+        {
+          "type": "Funding",
+          "attributes": [
+            {
+              "name": "Agency",
+              "value": "Institut National de la Santé et de la Recherche Médicale"
+            }
+          ]
+        },
+        {
+          "type": "Funding",
+          "attributes": [
+            {
+              "name": "Agency",
+              "value": "Université d&apos;Angers"
+            }
+          ]
+        },
+        {
+          "type": "Funding",
+          "attributes": [
+            {
+              "name": "Agency",
+              "value": "CHU Angers"
+            }
+          ]
+        },
+        {
+          "type": "Funding",
+          "attributes": [
+            {
+              "name": "Agency",
+              "value": "Conseil Départemental de Mayotte"
+            }
+          ]
+        },
+        {
+          "type": "Funding",
+          "attributes": [
+            {
+              "name": "Agency",
+              "value": "Universite Angers"
+            }
+          ]
+        },
+        {
+          "type": "Funding",
+          "attributes": [
+            {
+              "name": "Agency",
+              "value": "Fondation pour la Recherche Médicale"
+            },
+            {
+              "name": "grant_id",
+              "value": "SPF201809006985"
+            }
+          ]
+        },
+        {
+          "type": "Publication",
+          "attributes": [
+            {
+              "name": "Journal",
+              "value": "Diabetologia"
+            },
+            {
+              "name": "Volume",
+              "value": "68(1)"
+            },
+            {
+              "name": "Pages",
+              "value": "231-242"
+            },
+            {
+              "name": "Publication date",
+              "value": "2025 Jan"
+            }
+          ],
+          "links": [
+            [
+              {
+                "url": "10.1007/s00125-024-06288-0",
+                "attributes": [
+                  {
+                    "name": "Type",
+                    "value": "DOI"
+                  }
+                ]
+              },
+              {
+                "url": "PMC11663195",
+                "attributes": [
+                  {
+                    "name": "Type",
+                    "value": "PMC"
+                  }
+                ]
+              },
+              {
+                "url": "39422717",
+                "attributes": [
+                  {
+                    "name": "Type",
+                    "value": "PMID"
+                  }
+                ]
+              }
+            ]
+          ]
+        },
+        {
+          "accno": "a1",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Ali S"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a2",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Vidal-Gomez X"
+            },
+            {
+              "name": "ORCID",
+              "value": "0000-0002-7640-7996"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a3",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Piquet M"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a4",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Vergori L"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a5",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Simard G"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a6",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Dubois S"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a7",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Ducluzeau PH"
+            },
+            {
+              "name": "affiliation",
+              "value": "o2",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a8",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Pomies P"
+            },
+            {
+              "name": "affiliation",
+              "value": "o3",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a9",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Kamli-Salino S"
+            },
+            {
+              "name": "ORCID",
+              "value": "0000-0002-5107-5366"
+            },
+            {
+              "name": "affiliation",
+              "value": "o4",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a10",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Delibegovic M"
+            },
+            {
+              "name": "ORCID",
+              "value": "0000-0001-6193-3152"
+            },
+            {
+              "name": "affiliation",
+              "value": "o4",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a11",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Henni S"
+            },
+            {
+              "name": "affiliation",
+              "value": "o5",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a12",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Gagnadoux F"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a13",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Andriantsitohaina R"
+            },
+            {
+              "name": "affiliation",
+              "value": "o1",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a14",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Martinez MC"
+            },
+            {
+              "name": "affiliation",
+              "value": "o6",
+              "reference": true
+            }
+          ]
+        },
+        {
+          "accno": "a15",
+          "type": "Author",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Metabol Study Group"
+            }
+          ]
+        },
+        {
+          "accno": "o4",
+          "type": "Organization",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Aberdeen Cardiovascular and Diabetes Centre, Institute of Medical Sciences, University of Aberdeen, Aberdeen, UK."
+            }
+          ]
+        },
+        {
+          "accno": "o5",
+          "type": "Organization",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Centre Hospitalo-Universitaire d'Angers (CHU), Angers, France."
+            }
+          ]
+        },
+        {
+          "accno": "o1",
+          "type": "Organization",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "SOPAM, U1063, Inserm, UNIV Angers, SFR ICAT, Angers, France."
+            }
+          ]
+        },
+        {
+          "accno": "o6",
+          "type": "Organization",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "SOPAM, U1063, Inserm, UNIV Angers, SFR ICAT, Angers, France. carmen.martinez@inserm.fr."
+            }
+          ]
+        },
+        {
+          "accno": "o2",
+          "type": "Organization",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "Service de Médecine Interne, Unité d'Endocrinologie Diabétologie et Nutrition, Centre Hospitalier Universitaire et Faculté de Médecine, Université de Tours, Tours, France."
+            }
+          ]
+        },
+        {
+          "accno": "o3",
+          "type": "Organization",
+          "attributes": [
+            {
+              "name": "Name",
+              "value": "University of Montpellier, PhyMedExp, Inserm, CNRS UMR, Montpellier, France."
+            }
+          ]
+        }
+      ]
+    },
+    "type": "submission"
+  }

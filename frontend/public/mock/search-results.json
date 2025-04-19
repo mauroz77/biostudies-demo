@@ -1,0 +1,107 @@
+{
+    "page": 1,
+    "pageSize": 20,
+    "totalHits": 3360719,
+    "isTotalHitsExact": true,
+    "sortBy": "release_date",
+    "sortOrder": "descending",
+    "hits": [
+      {
+        "accession": "S-EPMC11663195",
+        "type": "study",
+        "title": "Circulating extracellular vesicle-carried PTP1B and PP2A phosphatases as regulators of insulin resistance.",
+        "author": "Ali S Vidal-Gomez X Piquet M Vergori L Simard G Dubois S Ducluzeau PH Pomies P Kamli-Salino S Delibegovic M Henni S Gagnadoux F Andriantsitohaina R Martinez MC Metabol Study Group",
+        "links": 4,
+        "files": 1,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      },
+      {
+        "accession": "S-EPMC11668129",
+        "type": "study",
+        "title": "Effective mRNA transfection of tumor cells using cationic triacyl lipid‑based mRNA lipoplexes.",
+        "author": "Hattori Y Shimizu R",
+        "links": 3,
+        "files": 1,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      },
+      {
+        "accession": "S-EPMC11667961",
+        "type": "study",
+        "title": "Exploring the reliability and profile of frequent mental health presentations using different methods: An observational study using statewide ambulance data over a 4-year period.",
+        "author": "Hew A Young JT Rowland B Scott D Nehme Z Arunogiri S Lubman DI",
+        "links": 3,
+        "files": 1,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      },
+      {
+        "accession": "S-EPMC11666923",
+        "type": "study",
+        "title": "Exploring the importance of predicted camel NRAP exon 4 for environmental adaptation using a mouse model.",
+        "author": "Lee SY Lee BY Lim B Uzzaman R Jang G Kim KS",
+        "links": 8,
+        "files": 2,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      },
+      {
+        "accession": "S-EPMC11667052",
+        "type": "study",
+        "title": "Daily routines, short-term priorities, and nurses' role hamper self-management support in a hospital setting: A mixed methods study.",
+        "author": "van Hooft S Berger E van Torenburg C van Staa A",
+        "links": 3,
+        "files": 2,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      },
+      {
+        "accession": "S-EPMC11666708",
+        "type": "study",
+        "title": "Incidence, risk factors, management strategies, and outcomes of antibody-mediated rejection in pediatric kidney transplant recipients-a multicenter analysis of the Cooperative European Paediatric Renal Transplant Initiative (CERTAIN).",
+        "author": "Fichtner A Gauche L Susal C Tran TH Waldherr R Krupka K Guzzo I Carraro A Oh J Zirngibl M Weitz M Konig J Buscher A Berta L Simon T Awan A Rusai K Topaloglu R Peruzzi L Printza N Kim JJ Weber LT Melk A Pape L Rieger S Patry C Hocker B Tonshoff B CERTAIN study group",
+        "links": 3,
+        "files": 2,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      },
+      {
+        "accession": "S-EPMC11666885",
+        "type": "study",
+        "title": "Trisomy 26 in a Holstein calf with disorders of sex development.",
+        "author": "Freick M Jacinto JGP Hafliger IM Weber J Behn H Schreiter R Drogemuller C",
+        "links": 4,
+        "files": 1,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      },
+      {
+        "accession": "S-EPMC11666921",
+        "type": "study",
+        "title": "Identification of a de novo missense variant in the BRI3BP gene in a Holstein calf with congenital cardiac malformation and carpus valgus.",
+        "author": "He C Grau-Roma L Schmid R Hafliger IM Meylan M Drogemuller C Jacinto JGP",
+        "links": 5,
+        "files": 2,
+        "release_date": "2025-01-01",
+        "views": 0,
+        "isPublic": true
+      }
+    ],
+    "query": null,
+    "facets": {
+      "facet.collection": [
+        "europepmc"
+      ],
+      "facet.link_type": [
+        "pmc"
+      ]
+    }
+  }
