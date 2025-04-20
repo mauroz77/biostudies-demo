@@ -28,9 +28,10 @@ export interface StudyHit {
   }
   
   export interface StudySection {
+    accno?: string
     type: string
     attributes: StudyAttribute[]
-    files: StudyFile[]
+    files?: StudyFile[]
     links?: StudyLink[][]
     subsections?: StudySection[]
   }
@@ -38,9 +39,9 @@ export interface StudyHit {
   export interface StudyDetail {
     accno: string
     attributes: StudyAttribute[]
-    section: StudySection
+    section?: StudySection
     
-    links: StudyLink[][]
-    subsections: StudySection[]
+    links?: StudyLink[][]
+    // subsections?: StudySection[]
     type: string
   }

@@ -14,17 +14,26 @@
       <div class="mb-6 text-gray-700">
         <strong>Released:</strong> {{ getAttribute('ReleaseDate') }}
       </div>
+
+      <div class="mb-3">
+        <Authors :authors="authors" :affiliationsIndexes="affiliationsIndexes" />
+      </div>
+
+      <div class="mb-6">
+        <Affiliations :affiliations="affiliations" :affiliationsIndexes="affiliationsIndexes" />
+      </div>
+
       <div class="mb-6 text-gray-700">
         <strong>Accession:</strong> {{ study.accno }}
       </div>
 
       <div class="text-gray-700">
-        <strong>Abstract:</strong> 
+        <strong>Abstract:</strong>
       </div>
 
       <div class="prose prose-sm max-w-none mb-6" v-html="getAbstract()"></div>
 
-      <div v-if="study.section.files?.length" class="mb-6">
+      <div v-if="study.section?.files?.length" class="mb-6">
         <h2 class="text-xl font-semibold mb-2">Files</h2>
         <ul class="list-disc list-inside">
           <li v-for="file in study.section.files" :key="file.path">
@@ -51,7 +60,7 @@
           </li>
         </ul>
       </div>
-      
+
     </div>
   </div>
 </template>
@@ -65,6 +74,8 @@ import { getStudyDetail } from '@/services/api'
 import Loader from '@/components/Loader.vue'
 import Error from '@/components/Error.vue'
 import PublicationSection from '@/components/PublicationSection.vue'
+import Authors from '@/components/Authors.vue'
+import Affiliations from '@/components/Affiliations.vue'
 
 const route = useRoute()
 const study = ref<StudyDetail | null>(null)
@@ -73,6 +84,9 @@ const error = ref('')
 
 const funding = ref<StudySection[]>([])
 const publications = ref<StudySection[]>([])
+const authors = ref<StudySection[]>([])
+const affiliations = ref<StudySection[]>([])
+const affiliationsIndexes = ref<Map<string, number>>(new Map())
 
 onMounted(async () => {
   const accno = route.params.accno as string
@@ -82,12 +96,25 @@ onMounted(async () => {
 
   try {
     const data = await getStudyDetail(accno)
-    console.log("DATA:", data);
 
     study.value = data
 
     funding.value = data.section?.subsections?.filter(s => s.type === 'Funding') || []
     publications.value = data.section?.subsections?.filter(s => s.type === 'Publication') || []
+    authors.value = data.section?.subsections?.filter(s => s.type === 'Author') || []
+    affiliations.value = data.section?.subsections?.filter(s => s.type === 'Organization') || []
+
+    let affiliationIdx = 1
+    let affiliationsIndexesValues = new Map<string, number>([]);
+
+    affiliations.value.forEach(a => {
+      if (a.accno) {
+        affiliationsIndexesValues.set(a.accno, affiliationIdx++)
+      }
+    })
+
+    affiliationsIndexes.value = affiliationsIndexesValues
+
   } catch (err) {
     error.value = 'Failed to fetch study details.'
     console.error(err)
