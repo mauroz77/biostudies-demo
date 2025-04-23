@@ -19,7 +19,7 @@ public class StudySectionAttribute {
     @JoinColumn(name = "study_section_id")
     private StudySection studySection;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "attribute_id")
     private Attribute attribute;
 }

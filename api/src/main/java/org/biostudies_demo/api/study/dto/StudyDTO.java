@@ -12,7 +12,7 @@ import java.util.List;
 public class StudyDTO {
 
     @JsonProperty("accno")
-    private String accessionNumber;
+    private String accessionID;
 
     private String type;
 

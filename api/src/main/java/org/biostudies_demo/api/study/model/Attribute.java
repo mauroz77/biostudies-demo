@@ -15,6 +15,7 @@ public class Attribute {
     private Long id;
 
     private String name;
+    @Column(columnDefinition = "text")
     private String value;
     @Column(nullable = true)
     private Boolean reference;

@@ -19,7 +19,7 @@ public class StudyLinkAttribute {
     @JoinColumn(name = "study_link_id")
     private StudyLink studyLink;
 
-    @ManyToOne
+    @ManyToOne(cascade=CascadeType.ALL)
     @JoinColumn(name = "attribute_id")
     private Attribute attribute;
 }
