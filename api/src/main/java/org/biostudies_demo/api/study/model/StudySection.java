@@ -17,7 +17,9 @@ public class StudySection {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = true)
     private String accno;
+
     private String type;
 
     @OneToMany(mappedBy = "studySection", cascade = CascadeType.ALL)
@@ -29,7 +31,8 @@ public class StudySection {
     @OneToMany(mappedBy = "section", cascade = CascadeType.ALL)
     private List<StudyLinkGroup> links;
 
-    // One-to-one relationship with Study
+    // One-to-one relationship with Study. Should be null if representing a subsection, in which case
+    // parent_section_id must have a value
     @OneToOne
     @JoinColumn(name = "study_id")
     private Study study;
