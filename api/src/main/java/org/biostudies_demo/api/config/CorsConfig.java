@@ -15,11 +15,9 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration();
 
         // Allow requests from everywhere. Might be specific too like "http://localhost:3000"
-        config.addAllowedOrigin("*"); // Assuming Vue runs on port 3000
-
+        config.addAllowedOrigin("*");
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
-        //config.setAllowCredentials(true);
 
         source.registerCorsConfiguration("/api/**", config);
         return new CorsFilter(source);

@@ -30,24 +30,99 @@ It aims to capture the core structure of study-related information but may not f
 
 ![Database Schema](./docs/db-schema.png)
 
-## 🚀 Getting Started
-Instructions to run the project locally:
+---
+
+## 🚀 Getting Started with Docker Compose
+
+### ✅ Prerequisites
+
+- [Docker](https://www.docker.com/)
+- [Docker Compose](https://docs.docker.com/compose/)
+
+---
+
+### 🏁 Running the App
+
+From the project root (`biostudies-demo/`), start everything with:
 
 ```bash
-# Backend
-cd backend
-./mvnw spring-boot:run
-
-# Frontend
-cd frontend
-npm install
-npm run dev
+docker-compose up --build
 ```
 
+This will:
+
+- Build the Vue frontend and Spring Boot backend
+- Set up a PostgreSQL database
+- Serve everything through nginx at `http://localhost`
+
+---
+
+### 🌍 Access Points
+
+| Service        | URL                                                                 |
+|----------------|----------------------------------------------------------------------|
+| 🧑‍💻 Frontend     | [http://localhost/](http://localhost/)                                  |
+| 📡 API          | [http://localhost/api](http://localhost/api)                            |
+| 📚 Swagger UI   | [http://localhost/api/swagger-ui/index.html](http://localhost/api/swagger-ui/index.html) |
+| 🐘 PostgreSQL    | Host: `localhost`, Port: `5432`<br>User: `user`, Password: `password`     |
+
+> 🔎 The API is available under `/api`. Swagger UI provides interactive documentation.
+
+---
+
+### 💾 Persistent Data
+
+| Volume Name     | Purpose                          |
+|------------------|----------------------------------|
+| `pgdata`         | PostgreSQL database storage      |
+| `lucene-index`   | Lucene index used by the backend |
+
+These volumes persist across container rebuilds and restarts.
+
+---
+
+### 🔄 Common Docker Commands
+
+Rebuild and restart everything:
+
+```bash
+docker-compose up --build
+```
+
+Rebuild only a specific service (e.g. frontend):
+
+```bash
+docker-compose build frontend
+```
+
+Stop and clean up all containers, networks, and volumes (except persistent data):
+
+```bash
+docker-compose down
+```
+
+---
+
+### 🧰 Project Structure
+
+```
+biostudies-demo/
+├── api/           # Spring Boot app
+├── frontend/      # Vue.js app
+├── nginx/         # nginx config
+├── docker-compose.yml
+└── README.md
+```
+
+---
+
 ## 📦 Tech Stack
-Backend: Java, Spring Boot, PostgreSQL, Apache Lucene
 
-Frontend: Vue.js, Tailwind CSS, Axios
+- 🖼️ Vue.js + Tailwind CSS frontend
+- 🧠 Spring Boot REST API (with Apache Lucene indexing)
+- 🐘 PostgreSQL database
+- 🌐 nginx reverse proxy for clean, unified access
 
+---
 ## 📝 License
 This project is for educational and demo purposes.
