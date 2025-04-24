@@ -23,7 +23,10 @@ Available pages:
 - **About**: A simple informational page about the project.
 
 ## 🧩 Architecture Overview
-You can include a diagram here to illustrate the high-level system design or the database schema. Visuals are excellent for interviews—they show you're thinking about design and data flow. Something like:
+
+### Database Schema
+The following schema was designed based on a small sample of real BioStudies data.
+It aims to capture the core structure of study-related information but may not fully represent the complete complexity of the BioStudies data model.
 
 ![Database Schema](./docs/db-schema.png)
 
