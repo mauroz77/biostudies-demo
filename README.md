@@ -1,4 +1,4 @@
-# BioStudies Demo: A Simplified BioStudies-like System
+# 🧬 BioStudies Demo: A Simplified BioStudies-like System
 
 **BioStudies Demo** is a prototype project designed to explore and replicate the core structure and functionality of studies hosted in the [BioStudies](https://www.ebi.ac.uk/biostudies/) platform.
 
