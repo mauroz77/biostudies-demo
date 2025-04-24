@@ -61,6 +61,10 @@ public class StudySection {
         return findAttributeByName("Abstract").getValue();
     }
 
+    public String getName() {
+        return findAttributeByName("Name").getValue();
+    }
+
     private Attribute findAttributeByName(String name) {
         return attributes.stream()
                 .map(StudySectionAttribute::getAttribute)

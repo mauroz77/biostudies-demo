@@ -4,20 +4,16 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.FullTextField;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.GenericField;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.Indexed;
-import org.hibernate.search.mapper.pojo.mapping.definition.annotation.IndexedEmbedded;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "study")
 @Getter
 @Setter
 @NoArgsConstructor
-@Indexed
 public class Study {
 
     @Id
@@ -29,25 +25,33 @@ public class Study {
     private String type;
 
     @OneToMany(mappedBy = "study", cascade = CascadeType.ALL, orphanRemoval = true)
-   // @IndexedEmbedded(includePaths = {"name", "value"})
     private List<StudyAttribute> attributes = new ArrayList<>();
 
     @OneToOne(mappedBy = "study", cascade = CascadeType.ALL, orphanRemoval = true)
     private StudySection section;
 
-//    @FullTextField
-//    @GenericField
-//    @Transient
-//    public String getTitle() {
-//        return findAttributeByName("Title").getValue();
-//    }
+    @Transient
+    public String getTitle() {
+        return findAttributeByName("Title").getValue();
+    }
 
-//    @FullTextField(analyzer = "english", name = "abstractText")
-//    @GenericField
-//    @Transient
-//    public String getAbstract() {
-//        return findAttributeByName("Abstract").getValue();
-//    }
+    @Transient
+    public String getReleaseDate() {
+        return findAttributeByName("ReleaseDate").getValue();
+    }
+
+    @Transient
+    public String getAuthorsAsText() {
+        String authorsAsText = "";
+        if (section != null && section.getSubsections() != null) {
+            authorsAsText  = String.join(" ", section.getSubsections()
+                    .stream()
+                    .filter(studySection -> "Author".equals(studySection.getType()))
+                    .map(StudySection::getName).toList());
+        }
+
+        return authorsAsText;
+    }
 
     private Attribute findAttributeByName(String name) {
         return attributes.stream()
