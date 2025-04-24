@@ -1,7 +1,15 @@
 import axios from 'axios'
 import type { StudyHit, StudyDetail } from '@/types/study'
 
-const useMock = true
+const useMock = false
+
+// Default to localhost:8080 for development, but allow override via env variables
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080'
+
+// Create an axios instance with the base URL
+const apiClient = axios.create({
+  baseURL: API_BASE_URL
+})
 
 export async function searchStudies(query: string): Promise<StudyHit[]> {
   if (useMock) {
@@ -9,7 +17,9 @@ export async function searchStudies(query: string): Promise<StudyHit[]> {
     const data = await res.json()
     return data.hits
   } else {
-    const { data } = await axios.get(`/api/search?q=${encodeURIComponent(query)}`)
+    console.log('will call url', `/api/search?q=${encodeURIComponent(query)}`);
+    
+    const { data } = await apiClient.get(`/api/search?q=${encodeURIComponent(query)}`)
     return data.hits
   }
 }
@@ -21,7 +31,9 @@ export async function getStudyDetail(accno: string): Promise<StudyDetail> {
     const data = await res.json()
     return data
   } else {
-    const { data } = await axios.get(`/api/study/${accno}`)
+    console.log('Get details for', accno);
+    
+    const { data } = await apiClient.get(`/api/study/${accno}`)
     console.log("DATA::::", data);
     
     return data

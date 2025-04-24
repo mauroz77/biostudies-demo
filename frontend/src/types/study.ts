@@ -40,8 +40,6 @@ export interface StudyHit {
     accno: string
     attributes: StudyAttribute[]
     section?: StudySection
-    
     links?: StudyLink[][]
-    // subsections?: StudySection[]
     type: string
   }
