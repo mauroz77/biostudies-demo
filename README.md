@@ -24,6 +24,10 @@ Available pages:
 
 ## 🧩 Architecture Overview
 
+This diagram shows how components in the project are connected:
+
+![Architecture Overview](./docs/Architecture Overview.png)
+
 ### Database Schema
 The following schema was designed based on a small sample of real BioStudies data.
 It aims to capture the core structure of study-related information but may not fully represent the complete complexity of the BioStudies data model.
