@@ -26,7 +26,7 @@ Available pages:
 
 This diagram shows how components in the project are connected:
 
-![Architecture Overview](./docs/Architecture Overview.png)
+![Architecture Overview](./docs/architecture-overview.png)
 
 ### Database Schema
 The following schema was designed based on a small sample of real BioStudies data.
