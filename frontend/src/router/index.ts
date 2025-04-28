@@ -5,6 +5,7 @@ import StudyDetail from '../views/StudyDetail.vue'
 import About from '../views/About.vue'
 
 const routes = [
+  { path: '/', redirect: '/studies' }, // redirect / to /studies
   { path: '/studies', name: 'Browser', component: Browser },
   { path: '/studies/:accno', name: 'study-detail', component: StudyDetail },
   { path: '/about', name: 'About', component: About },
