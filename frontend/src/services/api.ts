@@ -31,11 +31,7 @@ export async function getStudyDetail(accno: string): Promise<StudyDetail> {
     const data = await res.json()
     return data
   } else {
-    console.log('Get details for', accno);
-    
     const { data } = await apiClient.get(`/api/study/${accno}`)
-    console.log("DATA::::", data);
-    
     return data
   }
 }

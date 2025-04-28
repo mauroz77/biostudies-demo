@@ -14,6 +14,7 @@
         Search
       </button>
     </div>
+    <div class="italic text-xs text-gray-500">Example: gene</div>
   </template>
   
   <script setup lang="ts">
