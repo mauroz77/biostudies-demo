@@ -22,6 +22,25 @@ Available pages:
 - **Study Details**: Shows metadata and details of a selected study.
 - **About**: A simple informational page about the project.
 
+
+## 📸 Screenshots
+
+### Search Interface
+![Search Interface](./docs/screenshots/search-interface.png)
+The main search interface allows users to search for studies using keywords.
+
+### Results List
+![Results List](./docs/screenshots/results-list.png)
+Search results are displayed in a clean, organized list with key metadata.
+
+### Study Details
+![Study Details](./docs/screenshots/study-details.png)
+The study details page presents information about a selected study.
+
+### API Documentation
+![API Documentation](./docs/screenshots/api-documentation.png)
+Interactive API documentation powered by Swagger UI.
+
 ## 🧩 Architecture Overview
 
 This diagram shows how components in the project are connected:
