@@ -30,6 +30,19 @@
           <li>About: A simple informational page about the project.</li>
         </ul>
       </section>
+      
+      <section class="section">
+        <h2 class="section-title">📚 API Documentation</h2>
+        <p class="section-text">
+          Explore the full capabilities of our REST API with interactive documentation.
+        </p>
+        <div class="api-doc-link">
+          <a href="/api/swagger-ui/index.html" target="_blank" class="doc-button">
+            View API Documentation
+          </a>
+        </div>
+      </section>
+      
     </div>
   </template>
   
